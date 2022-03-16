@@ -1,0 +1,26 @@
+logica/estrutura - algoritimo
+
+1: fazer um layout utilizando HTML, CSS e JS para realizar um controle de dados
+    -utilidades
+  1 - mostrar saldo atual
+  2 - mostrar receitas  e despesas
+  3 - mostrar ultimas transações
+  4 - um form de entrada para preenchimento de dados
+      1: valor
+      2: expecificação
+      3: botão de adicionar
+  5 - após adicionado, temos a opção de excluir
+
+
+
+1: montar HTML com semântica, classes e ids, estilizar CSS
+
+
+Aprendido/revisto
+  array.filter      :itera uma array com uma verificação retornando uma nova array
+  array.map         :retorna uma array de outra ja existente
+  array.reduce      :
+  operador ternário :um verificação de condição rapida
+  math.abs          :retorna o absoluto de um numero
+  return: linha 63  :faz o return e impede da funcção continuar dali para baixo
+  append/prepend    :append adiciona ao final, preppend ao inicio

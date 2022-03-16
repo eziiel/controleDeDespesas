@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f1f1f1;
+}
+.content {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.content .titulo {
+  margin: 40px 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.saldo-atual {
+  margin: 20px 0;
+}
+.saldo-atual h2 {
+  font-size: 1.5rem;
+}
+.saldo-atual span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.form-add {
+  display: flex;
+  flex-direction: column;
+}
+.dados-saldo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 1px 3px 5px 1px #cacaca;
+}
+.saldo-atual .span-first {
+  font-weight: bold;
+  color: #3d3db1;
+}
+.saldo-atual .span-first.ativo {
+  color: #c42424;
+}
+.receita {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+.receita span {
+  font-size: 1.125rem;
+  color: #c42424;
+  letter-spacing: 1px;
+}
+.receita:first-child span {
+  color: #43a743;
+}
+.receita + .receita {
+  border-left: 1px solid #a0a0a0;
+}
+.transacoes {
+  padding: 10px 0;
+  border-bottom: 1px solid #a0a0a0;
+}
+.transacoes h2 {
+  font-size: 1.125rem;
+  padding: 20px 0;
+  border-bottom: 1px solid #a0a0a0;
+}
+.transacoes .lista-transacoes {
+  margin: 10px 0;
+}
+.transacoes li {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+.transacoes li button {
+  display: none;
+  position: absolute;
+  left: -20px;
+  content: "x";
+  width: 20px;
+  height: 20px;
+  background: #c42424;
+  text-align: center;
+  color: #fff;
+  border: none;
+}
+.transacoes li:hover button {
+  display: block;
+  cursor: pointer;
+}
+.transacoes li.receita-positiva {
+  border-right: 5px solid #43a743;
+  box-shadow: 1px 1px 2px 1px #cacaca;
+}
+.transacoes li.receita-negativa {
+  border-right: 5px solid #c42424;
+  box-shadow: 1px 3px 5px 1px #cacaca;
+}
+.add-transacoes {
+  font-size: 1.125rem;
+  margin: 20px 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #a0a0a0;
+}
+input {
+  height: 35px;
+  margin: 5px 0;
+  color: #000;
+  padding: 5px;
+}
+label {
+  color: #000;
+}
+#adicionar {
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #3d3db1, #5353ee);
+  cursor: pointer;
+  border: none;
+}
